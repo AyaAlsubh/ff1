@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       try {
-        let response = await ax.get("http://localhost:4000/api/workouts", {
+        let response = await ax.get("https://bb1-10m5.onrender.com/api/workouts", {
           headers: {'Authorization': `Bearer ${users.token}`},
         });
         console.log(response.data)
