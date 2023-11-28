@@ -16,7 +16,7 @@ const Signup = () => {
       setIsLoading(true)
    setError(null)
    
-   const response = await ax.post('http://localhost:4000/api/user/signup' ,{email,password} )
+   const response = await ax.post('https://bb1-10m5.onrender.com/api/user/signup' ,{email,password} )
  
   
  // save the user to local storage
